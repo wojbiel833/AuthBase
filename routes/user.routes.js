@@ -21,7 +21,7 @@ router.get("/logged", isLogged, (req, res) => {
   // console.log(req.user._json.picture);
   res.render("logged", {
     isLogged: true,
-    picURL: req.user._json.pictiure,
+    picURL: req.user._json.picture,
     userName: req.user.displayName,
   });
 });
